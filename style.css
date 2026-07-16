@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .main{
     display: flex;
     flex-direction: row;
@@ -23,11 +27,23 @@
 
     justify-content: space-between;
     align-items: center;
+
+    padding: 10px;
 }
 
 
-.left p{
+.credits{
     color: #fff;
+    font-size: 12px;
+}
+
+.odin{
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 50px;
 }
 
 .logo{
@@ -48,28 +64,89 @@
     height: 100px;
 }
 
-
-
-
-
 .right{
+    display: flex;
+    flex-direction: column;
+    
     width: 100%;
     height: 100vh;
+
+    background-color: #eeeeee;
 
     flex: 2;
 }
 
+.text{
+    display: flex;
+    flex-direction: column;
 
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 600;
 
+    max-width: 80%;
+    gap: 25px;
+}
 
+.form-content{
+    display: flex;
+    flex-direction: column;
 
+    background-color: #fff;
+    width: 100%;
+
+    padding: 30px;
+    gap: 25px;
+
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: rgb(82, 82, 82);
+
+}
+
+input{
+    width: 80%;
+    height: 35px;
+
+    border-style: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+input:user-invalid {
+    outline: none; 
+    border-color: red;
+}
+
+input:focus-visible {
+    outline: none; 
+    border-color: #3d4b32; 
+}
+
+.create-account-section{
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 0px 0px 40px;
+    gap: 25px;
+}
 
 
 .create-account{
     background-color: #596D48;
     color: #fff;
 
-    padding: 10px 30px;
+    max-width: 200px;
+    height: 45px;
+
     border-radius: 5px;
 
     border-style: none;
@@ -81,4 +158,9 @@
 
 .create-account:hover{
     background-color: #3d4b32;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
 }
